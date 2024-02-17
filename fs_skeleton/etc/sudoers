@@ -1,0 +1,1 @@
+laci, flaci, acctf ALL= NOPASSWD: /usr/bin/chrt, /sbin/poweroff, /sbin/reboot, /usr/sbin/tcpdump
