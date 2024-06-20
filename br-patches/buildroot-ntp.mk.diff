@@ -1,0 +1,23 @@
+--- package/ntp/ntp.hash.orig
++++ package/ntp/ntp.hash
+@@ -1,5 +1,4 @@
+-# From https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p13.tar.gz.md5
+-md5 ea040ab9b4ca656b5229b89d6b822f13  ntp-4.2.8p13.tar.gz
+-# Calculated based on the hash above
+-sha256 288772cecfcd9a53694ffab108d1825a31ba77f3a8466b0401baeca3bc232a38  ntp-4.2.8p13.tar.gz
+-sha256 3828da5fc8126889d6a64432288ace08526c490bf5427d799931689069968d91  COPYRIGHT
++# From https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2.8p18.tar.gz.sha256
++sha256  cf84c5f3fb1a295284942624d823fffa634144e096cfc4f9969ac98ef5f468e5  ntp-4.2.8p18.tar.gz
++# Locally computed
++sha256  45b6e5a0a5f0ac4afdd9e23caa2241779e4da463e4dba32a41b4dbd61577b2a3  COPYRIGHT
+--- package/ntp/ntp.mk.orig
++++ package/ntp/ntp.mk
+@@ -5,7 +5,7 @@
+ ################################################################################
+ 
+ NTP_VERSION_MAJOR = 4.2
+-NTP_VERSION = $(NTP_VERSION_MAJOR).8p13
++NTP_VERSION = $(NTP_VERSION_MAJOR).8p18
+ NTP_SITE = https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-$(NTP_VERSION_MAJOR)
+ NTP_DEPENDENCIES = host-pkgconf libevent
+ NTP_LICENSE = NTP
